@@ -1,0 +1,39 @@
+::selection{
+    color: orange;
+}
+body{
+    background-color: rgb(234, 228, 214);
+    font-family:  "PT Sans Caption", sans-serif;;
+}
+
+h1{
+    font-family: "Pacifico", cursive;
+
+}
+.ss{
+    border-bottom: 3px dotted ;
+}
+.hov::before{
+    content: "";
+    width: 17%;
+    background-color: #fec260;
+    height: 15px;
+    position: absolute;
+    z-index: -1;
+    top: 19%;
+    transition: 0.3s ease-in-out;
+}
+:hover.hov::before{
+    top: 17%;
+    height: 35px;
+}
+.book-mark{
+    font-family: "Righteous", cursive;
+    font-size: 25px;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.btn-visit{
+    background-color: #9eb23b;
+}

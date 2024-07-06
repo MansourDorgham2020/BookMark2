@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Mark</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<section class="sec container mt-5 py-5 ">
+    <div class="row">
+        <div class="">
+    <h1 class="h2 display-5 text-center hov">Bookmarker</h1>
+    <div class="ss mt-5"></div>
+    <div class="mt-5 d-flex justify-content-center book-mark">
+        <i class="fa-solid fa-bookmark py-3"></i>
+        <h1 class="h2 p-2"> Bookmark your favorite sites </h1>
+        <i class="fa-solid fa-bookmark py-3"></i>
+    </div>
+</div>
+<div class="form">
+    <div class="py-3 ">
+        <label for="bookMark"><i class="fa-solid fa-book"></i> Site name</label>
+        <br>
+        <input oninput="checkValidationName()" class="w-100 form-control  " type="text" name="Book Mark" id="bookMark" placeholder="Book Mark">
+        <p class="alert alert-warning d-none" id="msgValidation">is invalid</p>
+    </div>
+    <div class="py-3">
+        <label for="siteUrl"><i class="fa-solid fa-link"></i> Site Url</label>
+        <br>
+        <input oninput="checkValidationUrl()" class="w-100 form-control" type="text" name="Site Url" id="siteUrl" placeholder="Book Mark">
+        <p class="alert alert-warning d-none" id="msgValidationUrl">is invalid</p>
+    </div>
+    <div class="d-flex justify-content-center">
+    <button id="addBtn" onclick="addMark()" class="btn btn-outline-success ">Submit</button>
+    <button id="ubdateBtn" onclick="ubdateData()" class="btn btn-outline-warning d-none ">Ubdate</button>
+
+</div>
+<div class="ss py-5"></div>
+</div>
+<table class="table text-center mt-5 ">
+    <thead>
+        <tr>
+    <th>Index</th>
+    <th>Website Name</th>
+    <th>Visit</th>
+    <th>Action</th>
+</tr>
+</thead>
+<tbody   id="tableData">
+    <a href="" ></a>
+</tbody>
+</table>
+</div>
+</section >
+
+   <script src="./Js/index.js"></script> 
+</body>
+</html>
